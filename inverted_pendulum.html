@@ -1,12 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <link type="text/css" rel="stylesheet" href="stylesheet_inverted_pendulum.css"/>
   <title>Pendulum Simulation</title>
 </head>
-<body style="background: white;">
+<body style="background: #C2C4C4">
+
 <canvas id="canvas" width="500" height="500">
   <p>Sorry, your browser does not support the &lt;canvas&gt; used to display the pendulum animation.</p>
 </canvas>
+
+<h3>Inverted Pendulum</h3>
 <script>
   function PendulumSim(length_m, gravity_mps2, initialAngle_rad, initialVelocity_rad_s, timestep_ms, callback) {
     var velocity = initialVelocity_rad_s;
@@ -56,5 +60,6 @@
     prev=angle;
   });
 </script>
- 
-</body></html>
+
+</body>
+</html>
